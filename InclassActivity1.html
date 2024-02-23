@@ -10,8 +10,23 @@
             display: flex;
         }
 
-        .container>h1 {
+        .container>h1>a {
+            color: green;
+            text-decoration: none;
             margin: 0 10px;
+            transition: 0.2s;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .img-alt{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
@@ -39,12 +54,40 @@
 
     <div id="menu">
         <h1>Menu</h1>
+        <div class="image-container">
+            <div class="img-alt">
+                <img src="https://thumbs.dreamstime.com/b/java-logo-editorial-illustrative-white-background-eps-download-vector-jpeg-banner-java-logo-editorial-illustrative-white-208329454.jpg"
+                    alt="java coffee" width="271px" height="321px">
+                <p>Java Coffe</p>
+            </div>
+
+            <div class="img-alt">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/05/Cafe-au-lait-259a97b.png?quality=90&resize=556,505"
+                    alt="cafe au lait" width="271px" height="321px">
+                    <p>Cafe Au Lait</p>
+            </div>
+
+            <div class="img-alt">
+                <img src="https://www.torani.com/sites/default/files/recipes/illustration/4_torani_cookie_dough-6311_pink.jpg"
+                    alt="Cookie latte">
+                    <p>Cookie Latte</p>
+            </div>
+
+            <div class="img-alt">
+                <img src="https://www.texanerin.com/content/uploads/2023/02/chai-tea-latte-starbucks-copycat-image-1200.jpg"
+                    alt="chai tea latte" width="271px" height="321px">
+                    <p>Chai Tea Latte</p>
+            </div>
+
+
+        </div>
         <table>
             <tr>
                 <th colspan="2">Coffee Selections</th>
             </tr>
             <tr>
                 <td>Just Java</td>
+
                 <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>
                     Endless Cup $2.00</td>
             </tr>
@@ -52,19 +95,21 @@
                 <td>Cafe au Lait</td>
                 <td>House blended coffee infused into a smooth, steamed milk.<br>
                     <ul>
-                        <li style="square" ;>Small $2.00</li>
-                        <li style="square" ;>Medium $4.00</li>
-                        <li style="square" ;>Large $6.00</li>
+                        <li style="list-style-type:square;">Small $2.00</li>
+                        <li style="list-style-type:square;">Medium $4.00</li>
+                        <li style="list-style-type:square;">Large $6.00</li>
                     </ul>
                 </td>
             </tr>
             <tr>
                 <td>Cookie Chocolate Latte</td>
+
                 <td>Cookie, espresso and milk.<br>
                     Small $2.50, Medium $4.20, Large $7.00</td>
             </tr>
             <tr>
                 <td>Chai Tea Latte</td>
+
                 <td>Milk, cinnamon stick and fresh ginger.<br>
                     Small $3.00, Medium $5.00, Large $8.00</td>
             </tr>

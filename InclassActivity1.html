@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <title>Java Jam Coffee House</title>
     <meta name="description" content="CENG 311 Inclass Activity 1" />
     <style>
-        .container{
+        .container {
             display: flex;
+        }
+
+        .container>h1 {
+            margin: 0 10px;
         }
     </style>
 </head>
+
 <body>
 
 
-<h1>JavaJam Coffee House</h1>
+    <h1>JavaJam Coffee House</h1>
 
-<div class="container">
+    <div class="container">
 
-<h1>Menu</h1>
-<h1>Music</h1>
-<h1>Location</h1>
-</div>
+        <h1><a href="#menu">Menu</a></h1>
+        <h1><a href="#music">Music</a></h1>
+        <h1><a href="#location">Location</a></h1>
+    </div>
 
-<p>We are a gourmet coffee shop that serves snacks, coffee, tea, and soft drinks. Visit us to check out our:</p>
+    <p>We are a gourmet coffee shop that serves snacks, coffee, tea, and soft drinks. Visit us to check out our:</p>
     <ul>
         <li>Specialty Coffee and Tea</li>
         <li>Bagls, Muffins, and Organic Snacks</li>
@@ -31,50 +37,62 @@
     </ul>
 
 
+    <div id="menu">
+        <h1>Menu</h1>
+        <table>
+            <tr>
+                <th colspan="2">Coffee Selections</th>
+            </tr>
+            <tr>
+                <td>Just Java</td>
+                <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>
+                    Endless Cup $2.00</td>
+            </tr>
+            <tr>
+                <td>Cafe au Lait</td>
+                <td>House blended coffee infused into a smooth, steamed milk.<br>
+                    <ul>
+                        <li style="square" ;>Small $2.00</li>
+                        <li style="square" ;>Medium $4.00</li>
+                        <li style="square" ;>Large $6.00</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Cookie Chocolate Latte</td>
+                <td>Cookie, espresso and milk.<br>
+                    Small $2.50, Medium $4.20, Large $7.00</td>
+            </tr>
+            <tr>
+                <td>Chai Tea Latte</td>
+                <td>Milk, cinnamon stick and fresh ginger.<br>
+                    Small $3.00, Medium $5.00, Large $8.00</td>
+            </tr>
+        </table>
 
-<table>
-    <tr>
-	<th colspan="2">Coffee Selections</th>
-    </tr>
-    <tr>
-        <td>Just Java</td>
-        <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>
-            Endless Cup $2.00</td>
-    </tr>
-    <tr>
-        <td>Cafe au Lait</td>
-        <td>House blended coffee infused into a smooth, steamed milk.<br>
-            <ul>
-                <li style="square";>Small $2.00</li>
-                <li style="square";>Medium $4.00</li>
-                <li style="square";>Large $6.00</li>
-            </ul>
-              </td>
-    </tr>
-    <tr>
-        <td>Cookie Chocolate Latte</td>
-        <td>Cookie, espresso and milk.<br>
-            Small $2.50, Medium $4.20, Large $7.00</td>
-    </tr>
-    <tr>
-        <td>Chai Tea Latte</td>
-        <td>Milk, cinnamon stick and fresh ginger.<br>
-            Small $3.00, Medium $5.00, Large $8.00</td>
-    </tr>
-</table>
+    </div>
 
-    <p>Good music can be so hard to find...</p>
-    <p>If you did not like our music taste, fix your taste.</p>
+    <div id="music">
+        <h1>Music</h1>
+        <p>Good music can be so hard to find...</p>
+        <p>If you did not like our music taste, fix your taste.</p>
+    </div>
 
 
-<p>JavaJam is located at 8544 University City Blvd
-Charlotte, NC 28213. See <a href="http://maps.google.com">Google Maps</a> for directions.</p>
+    <div id="location">
+        <h1>Location</h1>
+        <p>JavaJam is located at 8544 University City Blvd
+            Charlotte, NC 28213. See <a href="http://maps.google.com">Google Maps</a> for directions.</p>
 
-<p><em>Copyright &copy; JavaJam Coffee House<br>
-manager@javajam.com</em></p>
+    </div>
 
-<a href="http://validator.w3.org/check?uri=referer">Validate</a> 
+
+    <p><em>Copyright &copy; JavaJam Coffee House<br>
+            manager@javajam.com</em></p>
+
+    <a href="http://validator.w3.org/check?uri=referer">Validate</a>
 
 
 </body>
+
 </html>

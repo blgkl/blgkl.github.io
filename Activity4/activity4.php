@@ -17,7 +17,7 @@ $output_money='';
 $output_currency='';
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    // Kullanıcı girdilerini al
+    // get the user input
     if (isset($_GET['input'])) {
         $input_money = $_GET['input'];
     }
@@ -30,31 +30,46 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         $output_currency = $_GET['currencies_out'];
     }
 
-    // convert fonksiyonunu çağır
+    // call the convert function
     $output_money = convert($input_money, $input_currency, $output_currency);
 }
 
 function convert($input_money, $input_currency, $output_currency){
 	
         $value = $input_money;
+		
+		$usdToSomething = array(
+		"cad" => "1.35",
+		"eur" => "0.92",
+		);
+		
+		$eurToSomething = array(
+		"cad" => "1.47",
+		"usd" => "1.09",
+		);
+		
+		$cadToSomething = array(
+		"eur" => "0.68",
+		"usd" => "0.74",
+		);
     
 	if($input_currency=='FUSD' && $output_currency=='TCAD'){ // usd to cad
-		$value= $value*135.40;
+		$value= $value*$usdToSomething["cad"];
 	}
 	if($input_currency=='FUSD' && $output_currency=='TEUR'){ // usd to eur
-		$value= $value*91.82;
+		$value= $value*$usdToSomething["eur"];
 	}
 	if($input_currency=='FCAD' && $output_currency=='TUSD'){ // cad to usd
-		$value= $value*73.86;
+		$value= $value*$cadToSomething["usd"];
 	}
 	if($input_currency=='FCAD' && $output_currency=='TEUR'){ // cad to eur
-		$value= $value*67.82;
+		$value= $value*$cadToSomething["eur"];
 	}
 	if($input_currency=='FEUR' && $output_currency=='TUSD'){ // eur to usd
-		$value= $value*108.89;
+		$value= $value*$eurToSomething["usd"];
 	}
 	if($input_currency=='FEUR' && $output_currency=='TCAD'){ // eur to cad
-		$value= $value*147.44;
+		$value= $value*$eurToSomething["cad"];
 	}
 	
     return $value;

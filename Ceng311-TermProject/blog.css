@@ -1,0 +1,52 @@
+/*This styles the article headers*/
+h5 a {
+    align-self: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.card-container {
+    display: flex;
+}
+
+/*We style article divs in here*/
+.article {
+    position: relative;
+    margin: 15px;
+    width: 20%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/*We style the images on article divs in here*/
+.article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+/*We added an info div to write article name and brief explanation*/
+.info {
+    height: %50;
+    width: 100%;
+    padding: 15px;
+    background-color: #074008;
+}
+
+/*We style the article name in here*/
+.info h5 {
+    font-size: 18px;
+    margin-top: 0;
+    text-align: center;
+}
+
+/*We style the article explanation in here*/
+.info p {
+    font-size: 14px;
+    color: black;
+    margin: 10px 0;
+    text-align: center;
+}

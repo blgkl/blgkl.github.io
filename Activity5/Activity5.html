@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Activity5.css" />
+    <title>Activity5</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="Activity5.php" method="POST">
+      <table>
+        <tbody>
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" name="name" id="name" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="userName">Username:</label></td>
+            <td><input type="text" name="userName" id="userName" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" name="password" id="password" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="address">Address:</label></td>
+            <td><input type="text" name="address" id="address" /></td>
+          </tr>
+
+          <tr>
+            <td><span>Country:</span></td>
+            <td>
+              <select name="country" id="country">
+                <option value="" disabled selected hidden>
+                  (Please select a country)
+                </option>
+                <option value="america">America</option>
+                <option value="turkey">Turkey</option>
+                <option value="china">China</option>
+                <option value="germany">Germany</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="zip">ZIP Code:</label></td>
+            <td><input type="text" name="zip" id="zip" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="mail">Email:</label></td>
+            <td><input type="email" name="mail" id="mail" /></td>
+          </tr>
+
+          <tr>
+            <td><span>Sex:</span></td>
+            <td>
+              <input type="radio" name="sex" id="male" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="sex" id="female" value="female" />
+              <label for="female">Female</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><span>Language:</span></td>
+            <td>
+              <input
+                type="checkbox"
+                name="language"
+                id="english"
+                value="english"
+                checked
+              />
+              <label for="english">English</label>
+              <input
+                type="checkbox"
+                name="language"
+                id="french"
+                value="french"
+              />
+              <label for="french">French</label>
+              <input
+                type="checkbox"
+                name="language"
+                id="germany"
+                value="germany"
+              />
+              <label for="germany">Germany</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="about">About:</label></td>
+            <td>
+              <textarea name="about" id="about" cols="20" rows="4"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>

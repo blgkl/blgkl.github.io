@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 15px;
+}
+form{
+    padding: 15px;
+}
+label{
+    display: inline-block;
+    width: 200px;
+    font-size: larger;
+}
+input{
+    margin: 15px 0;
+}
+button{
+    margin: 15px 0;
+}

@@ -1,0 +1,58 @@
+/*Here, we style our text and image boxes*/
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    color: white;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: black;
+    border: 1px #61BF5E solid;
+}
+.section-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: black;
+}
+article{
+    font-size: 20px;
+    width: 60%;
+}
+.history>p{
+    display: inline-block;
+    width: 90%;
+}
+.schema{
+    padding-bottom: 20px;
+}
+p{
+    font-size: 20px;
+}
+section>img,
+.section-container>img{
+    width: 300px;
+    height: auto;
+    z-index: 2;
+}
+
+section>img,
+#orhanizationScheme{
+    width: 900px;
+    height: auto;
+    z-index: 2;
+}

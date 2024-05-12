@@ -1,0 +1,33 @@
+.container{
+  height: 100vh;
+}
+
+textarea{
+    resize: none;
+}
+
+.form-container{
+  height: 90%;
+}
+
+h2{
+margin-bottom: -10px;
+}
+
+.send {
+  background-color: white;
+  border: solid 2px #61bf5e;
+  color: #61bf5e;
+  width: 130px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+  transition: 0.4s ease;
+}
+.send:hover {
+  color: white;
+  background-color: #61bf5e;
+}

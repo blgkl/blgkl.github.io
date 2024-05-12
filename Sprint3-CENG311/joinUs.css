@@ -1,0 +1,81 @@
+#background-img{
+  height: 95%;
+}
+/*Here, we style the input areas*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  padding: 0px 30px;
+  width: 50%;
+  height: 90%;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+}
+
+.form-container > h2 {
+  align-self: center;
+  color: #034001;
+  font-size: 35px;
+  font-weight: 600;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.form-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form > div {
+  width: 90%;
+}
+.form-div>div{
+  width: 50%;
+}
+
+label {
+  font-size: 15px;
+}
+input {
+  display: inline-block;
+  width: 90%;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.join {
+  background-color: white;
+  border: solid 2px #61bf5e;
+  color: #61bf5e;
+  width: 130px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+  transition: 0.4s ease;
+}
+.join:hover {
+  color: white;
+  background-color: #61bf5e;
+}

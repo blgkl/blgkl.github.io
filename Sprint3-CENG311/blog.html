@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="blog.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2995b03cec.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Blog</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <!--This is the code of navigation bar-->
+      <header>
+        <div id="logo">
+          <img src="biltekcyber white.png" alt="Biltek Logo" />
+        </div>
+
+        <nav>
+          <ul>
+            <li id="index"><a href="./index.html">Home</a></li>
+            <li id="aboutUs"><a href="./aboutUs.html">About Us</a></li>
+            <li id="blog"><a href="./blog.html">Blog</a></li>
+            <li id="joinUs"><a href="./joinUs.html">Join Us</a></li>
+            <li id="login"><a href="./login.html">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--We created an outer div named as card-container to hold all article divs together-->
+      <div class="card-container">
+        <div class="article" id="ddos">
+          <img
+            src="https://assets-global.website-files.com/633b3a6a2bf424862106599d/63f46be81c14d82fa0015f87_ddos-nedir-p-500.jpeg"
+            alt="Image 1"
+          />
+          <div class="info">
+            <!--we created an inner div named as info to seperate image and texts-->
+            <h5>
+              <a
+                href="https://www.gaissecurity.com/blog/ddos-nedir"
+                target="_blank"
+                >DDoS Attack</a
+              >
+            </h5>
+            <p>
+              What is Distributed Denial of Service attack? Read to learn
+              everything about DDoS.
+            </p>
+          </div>
+        </div>
+        <div class="article" id="wpa">
+          <img
+            src="https://assets-global.website-files.com/633b3a6a2bf424862106599d/63f3a5ff172833cdaaab0ef2_wpa-wpa2-guvenlik-standartlarina-yonelik-saldiri-krack-key-reinstallation-attack-p-500.jpeg"
+            alt="Image 2"
+          />
+          <div class="info">
+            <h5>
+              <a
+                href="https://www.gaissecurity.com/blog/wpa-wpa2-guvenlik-standartlarina-yonelik-saldiri-krack-key-reinstallation-attack"
+                target="_blank"
+                >WPA-WPA 2</a
+              >
+            </h5>
+            <p>Read to learn Krack Key Reinstallation-Attack.</p>
+          </div>
+        </div>
+        <div class="article" id="csrf">
+          <img
+            src="https://i0.wp.com/amanaadi.com/wp-content/uploads/2023/09/Cross-Site-Request-Forgery-CSRF-Attacks-amanaadi.png?fit=1024%2C576&ssl=1"
+            alt="Image 3"
+          />
+          <div class="info">
+            <h5>
+              <a
+                href="https://www.gaissecurity.com/blog/cross-site-request-forgery-csrf-zafiyeti"
+                target="_blank"
+                >CSRF Attack</a
+              >
+            </h5>
+            <p>Read to learn about Cross-Site Request Forgery (CSRF) Attack.</p>
+          </div>
+        </div>
+        <div class="article" id="active-dir">
+          <img
+            src="https://assets-global.website-files.com/633b3a6a2bf424862106599d/63f469dfa6a1ca7f842f9d1e_active-directory-guvenlik-ipuclari-p-500.png"
+            alt="Image 4"
+          />
+          <div class="info">
+            <h5>
+              <a
+                href="https://www.gaissecurity.com/blog/active-directory-guvenlik-ipuclari"
+                target="_blank"
+                >Active Directory</a
+              >
+            </h5>
+            <p>Learn about Active Directory security tips.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="contact-us"> 
+          <h5>Contact US</h5>
+          <a href="./contactUs.html"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+
+        <div class="footer-container">
+          <h5>FOLLOW US!</h5>
+          <div class="links">
+            <a href="https://github.com/" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.instagram.com/biltekcyber/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/cyberbiltek" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

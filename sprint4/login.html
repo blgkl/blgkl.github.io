@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script
+      src="https://kit.fontawesome.com/2995b03cec.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--This is the code of the navigation bar-->
+      <header>
+        <div id="logo">
+          <img src="./biltekcyber white.png" alt="Biltek Logo" />
+        </div>
+
+        <nav>
+          <ul>
+            <li id="index"><a href="./index.html">Home</a></li>
+            <li id="aboutUs"><a href="./aboutUs.html">About Us</a></li>
+            <li id="blog"><a href="./blog.html">Blog</a></li>
+            <li id="joinUs"><a href="./joinUs.html">Join Us</a></li>
+            <li id="login"><a href="./login.html">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="form-container">
+        <h2>LOGIN</h2>
+        <!--Here we get the user input to register-->
+        <form id="loginForm" action="">
+          <div>
+            <label for="mail">E-mail: </label>
+            <input type="email" name="mail" id="mail" />
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <!--Here we have the submit button-->
+          <button type="submit" class="submit" id="submit">Submit</button>
+        </form>
+
+        <div class="link">
+          <!--Here we can embed a link of forgotten passwords page-->
+          <a href="#">Forgot Your Password?</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="index.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+.form-container{
+    justify-content: space-evenly;
+    align-items: center;
+}
+h2{
+    margin-bottom: -25px;
+}
+.feedback-message{
+    font-size: 19px;
+    color: #033602;
+    color: black;
+}
+span{
+    color: #61bf5e;
+}
+.feedback-link{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 15px;
+}
+.feedback-link>a{
+    display: flex;
+    width: 30%;
+    text-decoration: none;
+    color: #055802;
+}
+.feedback-link>a:hover{
+    text-decoration:underline
+}
+i{
+    font-size: 15px;
+    width: 20%;
+}
